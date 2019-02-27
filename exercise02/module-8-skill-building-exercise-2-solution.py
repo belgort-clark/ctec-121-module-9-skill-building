@@ -1,32 +1,30 @@
 # Module 8 - Skill Building Exercise No. 2 Solution
 # Author: Bruce Elgort
 # Date: July 22, 2017
+# Update: February 25, 2019
 
 class Student:
-    def __init__(self,first,last,gender,gpa,degree,birthday,courses):
-        self.first_name = first
-        self.last_name = last
-        self.gender = gender
-        self.gpa = gpa
-        self.degree = degree
-        self.birthday = birthday
-        self.courses = courses
 
+    def __init__(self,first,last,gender,gpa,degree,birthday,courses):
+        self.__first_name = first
+        self.__last_name = last
+        self.__gender = gender
+        self.__gpa = gpa
+        self.__degree = degree
+        self.__birthday = birthday
+        self.__courses = courses
 
     def setGPA(self,gpa):
-        self.gpa = gpa
-
+        self.__gpa = gpa
 
     def getGPA(self):
-        return self.gpa
-
+        return self.__gpa
 
     def setCourse(self,course):
-        self.courses.append(course)
-
+        self.__courses.append(course)
 
     def getCourses(self):
-        return self.courses
+        return self.__courses
 
 def main():    
     bruce = Student("Bruce","Elgort","Male","4.0","Web Development","7/2/1963",['CTEC121','CTEC122'])

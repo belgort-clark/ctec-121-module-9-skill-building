@@ -1,21 +1,30 @@
 # Module 8 - Skill Building Exercise No. 3 Solution
 # Author: Bruce Elgort
 # Date: July 22, 2017
+# Revised: February, 25, 2019
 
 class PlayingCard:
-    def __init__(self,rank,suit):
-        self.rank = rank
-        self.suit = suit
-        self.flipped = False
 
+    def __init__(self,rank,suit):
+        self.__rank = rank
+        self.__suit = suit
+        self.__flipped = False
 
     def flip(self):
-        flipped = self.flipped
+        flipped = self.__flipped
         if not flipped:
-            self.flipped = True
+            self.__flipped = True
         else:
-            self.flipped = False
+            self.__flipped = False
 
+    def getRank(self):
+        return self.__rank
+
+    def getSuit(self):
+        return self.__suit
+
+    def getFlipped(self):
+        return self.__flipped
 
 def main():
     # build list of suits
@@ -43,7 +52,7 @@ def main():
     # now show each card
     print("\n\nDisplaying each card...\n\n")
     for i in range(len(deck)):
-        print("Rank: {0:>8}".format(deck[i].rank),"Suit:{0:>8}".format(deck[i].suit),"Flipped:{0:>5}".format(deck[i].flipped))
+        print("Rank: {0:>8}".format(deck[i].getRank()),"Suit:{0:>11}".format(deck[i].getSuit()),"Flipped:{0:>5}".format(deck[i].getFlipped()))
 
     # now flip them back
     for i in range(len(deck)):
@@ -52,7 +61,7 @@ def main():
     # now show each card
     print("\n\nShowing the flipped deck of cards...\n\n")
     for i in range(len(deck)):
-        print("Rank: {0:>8}".format(deck[i].rank),"Suit:{0:>8}".format(deck[i].suit),"Flipped:{0:>5}".format(deck[i].flipped))
+        print("Rank: {0:>8}".format(deck[i].getRank()),"Suit:{0:>11}".format(deck[i].getSuit()),"Flipped:{0:>5}".format(deck[i].getFlipped()))
 
 
 main()
