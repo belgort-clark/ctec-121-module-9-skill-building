@@ -1,4 +1,4 @@
-# Module 8 - Skill Building Exercise No. 3
+# Module 9 - Skill Building Exercise No. 3
 
 ## Building a Deck of Cards with a Class
 

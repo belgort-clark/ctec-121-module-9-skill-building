@@ -1,4 +1,4 @@
-# Module 8 - Skill Building Exercise No. 1
+# Module 9 - Skill Building Exercise No. 1
 
 ## Build a Game Class
 

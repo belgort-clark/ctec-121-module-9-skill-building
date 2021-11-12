@@ -1,4 +1,4 @@
-# Module 8 - Skill Building Exercise No. 2 Solution
+# Module 9 - Skill Building Exercise No. 2 Solution
 # Author: Bruce Elgort
 # Date: July 22, 2017
 # Update: February 25, 2019

@@ -1,4 +1,4 @@
-# Module 8 - Skill Building Exercise No. 2
+# Module 9 - Skill Building Exercise No. 2
 
 ## Build a Student Class
 
